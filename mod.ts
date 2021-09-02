@@ -6,7 +6,7 @@ addEventListener('fetch', event => {
   event.respondWith(
     new Response(`Seu número da sorte de hoje é: ${generate()}`, {
       status: 200,
-      headers: { 'content-type': 'text/plain' }
+      headers: { 'content-type': 'text/html' }
     })
   )
 })
